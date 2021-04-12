@@ -1,20 +1,89 @@
-.title {
-    background: #099d8d;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
+* {
+  margin: 0;
+}
+.hero {
+  position: relative;
+}
+.imagen-cabecera {
+  background-size: cover;
+  background: url(../images/imagen-cabecera.png) center center;
+  height: 421px;
+  width: 100vw;
+}
+.box-claim {
+  background-color: white;
+  height: 80px;
+  width: 290px;
+
+  position: absolute;
+  top: 387px;
+  margin-left: 15px;
+}
+.claim {
+  font-family: "Open Sans semibold";
+  font-size: 18px;
+  line-height: 25px;
+  padding: 15px;
 }
 
-.links {
-    background-color: #14d9c4;
-    display: flex;
-    justify-content: space-around;
-    height: 45px;
-    align-items: center;
+/* RESPONSIVE TABLET - HERO */
+@media all and (min-width: 768px) {
+  .hero {
+    position: relative;
+  }
+  .imagen-cabecera {
+    background-size: cover;
+    background: url(../images/imagen-cabecera.png) center center;
+    height: 421px;
+    width: 100vw;
+  }
+  .box-claim {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 80px;
+    width: 441px;
+
+    position: absolute;
+    top: 341px;
+    margin-left: 46px;
+  }
+  .claim {
+    font-family: "Open Sans semibold";
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
-.a {
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
+/* RESPONSIVE PANTALLA - HERO */
+@media all and (min-width: 1200px) {
+  .hero {
+    position: relative;
+  }
+  .imagen-cabecera {
+    background-size: cover;
+    background: url(../images/imagen-cabecera.png) center center;
+    height: 550px;
+    width: 100vw;
+  }
+  .box-claim {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 90px;
+    width: 574px;
+
+    position: absolute;
+    top: 460px;
+    margin-left: 138px;
+  }
+  .claim {
+    font-family: "Open Sans semibold";
+    font-size: 24px;
+    line-height: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
