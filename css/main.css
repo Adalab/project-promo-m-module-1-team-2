@@ -4,7 +4,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  /*outline: thin solid red;*/
+  /* outline: thin solid red;*/
 }
 
 :root {
@@ -21,55 +21,55 @@ body {
 
 /*HEADER + RESPONSIVE HEADER*/
 .header {
-    background: #099d8d;
-    display: flex;
-    flex-direction: column;
+  background: #099d8d;
+  display: flex;
+  flex-direction: column;
 }
 
 .h1 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .title {
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    background: #099d8d;
-    text-transform: uppercase;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  background: #099d8d;
+  text-transform: uppercase;
 }
 
 .links {
-    font-size: 15px;
-    background-color: #14d9c4;
-    padding: 16px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  font-size: 15px;
+  background-color: #14d9c4;
+  padding: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .a {
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
-    .header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        background: #099d8d;
-        padding: 15px 45px;
-    }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #099d8d;
+    padding: 15px 45px;
+  }
 
-    .links {
-        background-color: #099d8d;
-        width: 400px;
-    }
+  .links {
+    background-color: #099d8d;
+    width: 400px;
+  }
 }
 
-/*HERO + RESPONSIVE HERO*/
+/*HERO*/
 .hero {
   position: relative;
 }
@@ -102,7 +102,27 @@ body {
 
   padding: 15px;
 }
- 
+
+@media all and (min-width: 1200px) {
+  .img-hero {
+    height: 550px;
+  }
+
+  .box-claim {
+    height: 90px;
+    width: 50%;
+
+    position: absolute;
+    bottom: 0px;
+    margin-left: 140px;
+  }
+
+  .claim {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
 @media all and (min-width: 768px) {
   .box-claim {
     background-color: rgba(255, 255, 255, 0.8);
@@ -117,28 +137,9 @@ body {
     padding: 15px 30px 15px 30px;
     text-align: left;
   }
+}
 
-  @media all and (min-width: 1200px) {
-    .img-hero {
-      height: 550px;
-    }
-  
-    .box-claim {
-      height: 90px;
-      width: 50%;
-  
-      position: absolute;
-      bottom: 0px;
-      margin-left: 140px;
-    }
-  
-    .claim {
-      font-size: 24px;
-      line-height: 30px;
-    }
-  }
-
-/* TEAM + RESPONSIVE TEAM */
+/* TEAM */
 .container-team {
   text-align: center;
   color: #54585a;
@@ -167,21 +168,21 @@ body {
   padding: 30px 15px 15px 15px;
 }
 @media (min-width: 768px) {
-.strength-weaknesses {
+  .strength-weaknesses {
     padding: 15px 45px 0px 45px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-}
-    
-.strength h3 {
-  color: #099d8d;
-}
 
-.weaknesses {
-  padding-bottom: 45px;
-  padding-top: 30px;
+  .strength h3 {
+    color: #099d8d;
+  }
+
+  .weaknesses {
+    padding-bottom: 45px;
+    padding-top: 30px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -189,78 +190,84 @@ body {
     padding-bottom: 45px;
     padding-top: 0;
   }
-}
 
-.weaknesses h3 {
-  color: #099d8d;
-}
+  .weaknesses h3 {
+    color: #099d8d;
+  }
 
-/* ADALABERS */
-.whoarewe {
-  width: 85%;
-  margin: 0 auto;
+  /* ADALABERS */
+  .whoarewe {
+    width: 85%;
+    margin: 0 auto;
 
-  display: flex;
-  flex-flow: column wrap;
-  gap: 1rem;
-}
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
+  }
 
-.whoarewe h2 {
-  color: var(--blue-green);
-  text-transform: uppercase;
-  font-family: var(--main-font-family);
-  margin: 1rem;
-}
+  .whoarewe h2 {
+    color: var(--blue-green);
+    text-transform: uppercase;
+    font-family: var(--main-font-family);
+    margin: 1rem;
+  }
 
-.person-info {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-}
-
-.person-info img {
-  background: #099d8d;
-  height: 180px;
-  width: 180px;
-}
-
-.person-info h3 {
-  color: black;
-  margin: 1rem 0;
-}
-
-.whoarewe .wrapper-rrss {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 0.5rem;
-  justify-content: center;
-  margin: 1.5rem 0;
-}
-
-.whoarewe .wrapper-rrss .icon {
-  color: #099d8d;
-}
-
-@media all and (min-width: 768px) {
   .person-info {
-    text-align: start;
-    flex-flow: row nowrap;
+    display: flex;
+    flex-flow: column wrap;
     align-items: center;
-    gap: 2rem;
+  }
+
+  .person-info img {
+    background: #099d8d;
+    height: 180px;
+    width: 180px;
+  }
+
+  .person-info h3 {
+    color: black;
+    margin: 1rem 0;
   }
 
   .whoarewe .wrapper-rrss {
-    justify-content: start;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+  }
+
+  .whoarewe .wrapper-rrss .icon {
+    color: #099d8d;
+  }
+
+  @media all and (min-width: 768px) {
+    .person-info {
+      text-align: start;
+
+      display: flex;
+      flex-flow: row wrap;
+      gap: 2rem;
+    }
+
+    .wrapper-person-info {
+      flex-basis: 70%;
+    }
+
+    .whoarewe .wrapper-rrss {
+      justify-content: start;
+    }
+  }
+
+  /*FOOTER + FOOTER RESPONSIVE*/
+  .footer-HomePage {
+    border-top: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-/*FOOTER + FOOTER RESPONSIVE*/
-.footer-HomePage {
-  border-top: 1px solid grey;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 @media (min-width: 768px) {
   .footer-HomePage {
     flex-direction: row;
