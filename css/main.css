@@ -69,7 +69,7 @@ body {
     }
 }
 
-/*HERO*/
+/*HERO + RESPONSIVE HERO*/
 .hero {
   position: relative;
 }
@@ -102,8 +102,43 @@ body {
 
   padding: 15px;
 }
+ 
+@media all and (min-width: 768px) {
+  .box-claim {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 60%;
 
-/* TEAM */
+    bottom: 0px;
+    margin-left: 46px;
+  }
+
+  .claim {
+    font-size: 18px;
+    padding: 15px 30px 15px 30px;
+    text-align: left;
+  }
+
+  @media all and (min-width: 1200px) {
+    .img-hero {
+      height: 550px;
+    }
+  
+    .box-claim {
+      height: 90px;
+      width: 50%;
+  
+      position: absolute;
+      bottom: 0px;
+      margin-left: 140px;
+    }
+  
+    .claim {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+/* TEAM + RESPONSIVE TEAM */
 .container-team {
   text-align: center;
   color: #54585a;
@@ -131,14 +166,13 @@ body {
   background-color: #f1f1f1;
   padding: 30px 15px 15px 15px;
 }
-@media (min-width: 768px){
-  
+@media (min-width: 768px) {
 .strength-weaknesses {
- 
     padding: 15px 45px 0px 45px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
 }
     
 .strength h3 {
@@ -154,10 +188,8 @@ body {
   .weaknesses {
     padding-bottom: 45px;
     padding-top: 0;
-
+  }
 }
-
-
 
 .weaknesses h3 {
   color: #099d8d;
@@ -207,6 +239,19 @@ body {
 
 .whoarewe .wrapper-rrss .icon {
   color: #099d8d;
+}
+
+@media all and (min-width: 768px) {
+  .person-info {
+    text-align: start;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .whoarewe .wrapper-rrss {
+    justify-content: start;
+  }
 }
 
 /*FOOTER + FOOTER RESPONSIVE*/
@@ -273,68 +318,4 @@ body {
 .img-logo-footer {
   height: 45px;
   width: 115.9px;
-}
-
-/* RESPONSIVE TABLET */
-@media all and (min-width: 768px) {
- 
-  /* RESPONSIVE TABLET - HERO */
-  .box-claim {
-    background-color: rgba(255, 255, 255, 0.8);
-    width: 60%;
-
-    bottom: 0px;
-    margin-left: 46px;
-  }
-
-  .claim {
-    font-size: 18px;
-    padding: 15px 30px 15px 30px;
-    text-align: left;
-  }
-
-  /* RESPONSIVE TABLET - TEAM */
-
-  /* RESPONSIVE TABLET - DAFO */
-
-  /* RESPONSIVE TABLET - ADALABERS */
-  .person-info {
-    text-align: start;
-    flex-flow: row nowrap;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .whoarewe .wrapper-rrss {
-    justify-content: start;
-  }
-}
-
-/* RESPONSIVE PANTALLA*/
-@media all and (min-width: 1200px) {
-
-  /* RESPONSIVE PANTALLA - HERO */
-  .img-hero {
-    height: 550px;
-  }
-
-  .box-claim {
-    height: 90px;
-    width: 50%;
-
-    position: absolute;
-    bottom: 0px;
-    margin-left: 140px;
-  }
-
-  .claim {
-    font-size: 24px;
-    line-height: 30px;
-  }
-
-  /* RESPONSIVE PANTALLA - TEAM */
-
-  /* RESPONSIVE PANTALLA - DAFO */
-
-  /* RESPONSIVE PANTALLA - ADALABERS */
 }
