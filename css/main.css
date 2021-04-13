@@ -3,7 +3,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  outline: thin solid red;
+  /*outline: thin solid red;*/
 }
 
 :root {
@@ -40,7 +40,6 @@ body {
   text-decoration: none;
 }
 
-
 /*HERO*/
 
 .hero {
@@ -51,7 +50,7 @@ body {
   background-size: cover;
   background: url(../images/imagen-cabecera.png) center center;
   height: 421px;
-  width: 100vw;
+  width: 100%;
 }
 
 .box-claim {
@@ -71,6 +70,42 @@ body {
   padding: 15px;
 }
 
+/* TEAM */
+
+.container-team {
+  text-align: center;
+  color: #54585a;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  padding-top: 40px;
+}
+
+.team-title {
+  color: #099d8d;
+  margin-bottom: 15px;
+}
+
+.team {
+  padding-bottom: 30px;
+}
+
+.strength-weaknesses {
+  background-color: #f1f1f1;
+
+  padding: 30px 15px 15px 15px;
+}
+
+.strength h3 {
+  color: #099d8d;
+}
+
+.weaknesses {
+  padding-bottom: 45px;
+}
+
+.weaknesses h3 {
+  color: #099d8d;
+}
 
 /* QUÍENES SOMOS */
 
@@ -121,10 +156,7 @@ body {
 
 /* FIN DE QUIÉNES SOMOS */
 
-
-
-  /* RESPONSIVE */
-
+/* RESPONSIVE */
 
 @media all and (min-width: 768px) {
   /* RESPONSIVE QUIÉNES SOMOS */
@@ -139,7 +171,7 @@ body {
     justify-content: start;
   }
   /* FIN RESPONSIVE QUIÉNES SOMOS */
-  
+
   /* RESPONSIVE TABLET - HERO */
   .box-claim {
     background-color: rgba(255, 255, 255, 0.8);
@@ -148,7 +180,7 @@ body {
     top: 341px;
     margin-left: 46px;
   }
-  
+
   .claim {
     padding-left: 30px;
     padding-right: 30px;
@@ -157,9 +189,8 @@ body {
   }
 }
 
-
 @media all and (min-width: 1200px) {
-/* RESPONSIVE PANTALLA - HERO */
+  /* RESPONSIVE PANTALLA - HERO */
   .imagen-cabecera {
     height: 550px;
   }
