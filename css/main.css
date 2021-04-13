@@ -18,8 +18,7 @@ body {
   text-align: center;
 }
 
-/*HERO*/
-
+/*HEADER*/
 .title {
   background: #099d8d;
   color: #ffffff;
@@ -40,20 +39,21 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
+
+
+/*HERO*/
+
 .hero {
   position: relative;
 }
+
 .imagen-cabecera {
   background-size: cover;
   background: url(../images/imagen-cabecera.png) center center;
   height: 421px;
   width: 100vw;
 }
+
 .box-claim {
   background-color: white;
   height: 80px;
@@ -63,12 +63,14 @@ body {
   top: 387px;
   margin-left: 15px;
 }
+
 .claim {
   font-family: "Open Sans semibold";
   font-size: 18px;
   line-height: 25px;
   padding: 15px;
 }
+
 
 /* QUÍENES SOMOS */
 
@@ -119,6 +121,11 @@ body {
 
 /* FIN DE QUIÉNES SOMOS */
 
+
+
+  /* RESPONSIVE */
+
+
 @media all and (min-width: 768px) {
   /* RESPONSIVE QUIÉNES SOMOS */
   .person-info {
@@ -131,11 +138,9 @@ body {
   .whoarewe .wrapper-rrss {
     justify-content: start;
   }
-
   /* FIN RESPONSIVE QUIÉNES SOMOS */
-
+  
   /* RESPONSIVE TABLET - HERO */
-
   .box-claim {
     background-color: rgba(255, 255, 255, 0.8);
     width: 441px;
@@ -143,6 +148,7 @@ body {
     top: 341px;
     margin-left: 46px;
   }
+  
   .claim {
     padding-left: 30px;
     padding-right: 30px;
@@ -151,10 +157,9 @@ body {
   }
 }
 
-/* FIN RESPONSIVE TABLET - HERO */
 
-/* RESPONSIVE PANTALLA - HERO */
 @media all and (min-width: 1200px) {
+/* RESPONSIVE PANTALLA - HERO */
   .imagen-cabecera {
     height: 550px;
   }
