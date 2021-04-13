@@ -77,7 +77,12 @@ body {
   color: #54585a;
   margin-bottom: 15px;
   margin-top: 30px;
-  padding-top: 40px;
+}
+@media (min-width: 768px) {
+  .container-team {
+    margin-bottom: 30px;
+    margin-top: 45px;
+  }
 }
 
 .team-title {
@@ -86,22 +91,40 @@ body {
 }
 
 .team {
-  padding-bottom: 30px;
+  padding: 15px 15px 30px 15px;
 }
 
 .strength-weaknesses {
   background-color: #f1f1f1;
-
   padding: 30px 15px 15px 15px;
 }
-
+@media (min-width: 768px){
+  
+.strength-weaknesses {
+ 
+    padding: 15px 45px 0px 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    
 .strength h3 {
   color: #099d8d;
 }
 
 .weaknesses {
   padding-bottom: 45px;
+  padding-top: 30px;
 }
+
+@media (min-width: 768px) {
+  .weaknesses {
+    padding-bottom: 45px;
+    padding-top: 0;
+
+}
+
+
 
 .weaknesses h3 {
   color: #099d8d;
