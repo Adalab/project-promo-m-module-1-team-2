@@ -20,6 +20,8 @@
 }
 * {
   margin: 0;
+  padding: 0;
+  border: 0;
 }
 .hero {
   position: relative;
@@ -48,28 +50,14 @@
 
 /* RESPONSIVE TABLET - HERO */
 @media all and (min-width: 768px) {
-  .hero {
-    position: relative;
-  }
-  .imagen-cabecera {
-    background-size: cover;
-    background: url(../images/imagen-cabecera.png) center center;
-    height: 421px;
-    width: 100vw;
-  }
   .box-claim {
     background-color: rgba(255, 255, 255, 0.8);
-    height: 80px;
     width: 441px;
 
-    position: absolute;
     top: 341px;
     margin-left: 46px;
   }
   .claim {
-    font-family: "Open Sans semibold";
-    font-size: 18px;
-    line-height: 25px;
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 15px;
@@ -79,17 +67,10 @@
 
 /* RESPONSIVE PANTALLA - HERO */
 @media all and (min-width: 1200px) {
-  .hero {
-    position: relative;
-  }
   .imagen-cabecera {
-    background-size: cover;
-    background: url(../images/imagen-cabecera.png) center center;
     height: 550px;
-    width: 100vw;
   }
   .box-claim {
-    background-color: rgba(255, 255, 255, 0.8);
     height: 90px;
     width: 574px;
 
@@ -98,12 +79,7 @@
     margin-left: 138px;
   }
   .claim {
-    font-family: "Open Sans semibold";
     font-size: 24px;
     line-height: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 15px;
-    padding-bottom: 15px;
   }
 }
