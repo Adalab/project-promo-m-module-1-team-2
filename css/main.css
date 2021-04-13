@@ -21,52 +21,52 @@ body {
 
 /*HEADER + RESPONSIVE HEADER*/
 .header {
-    background: #099d8d;
-    display: flex;
-    flex-direction: column;
+  background: #099d8d;
+  display: flex;
+  flex-direction: column;
 }
 
 .h1 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .title {
-    padding: 15px;
-    color: #ffffff;
-    text-align: center;
-    background: #099d8d;
-    text-transform: uppercase;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  background: #099d8d;
+  text-transform: uppercase;
 }
 
 .links {
-    font-size: 15px;
-    background-color: #14d9c4;
-    padding: 16px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  font-size: 15px;
+  background-color: #14d9c4;
+  padding: 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .a {
-    color: #ffffff;
-    text-transform: uppercase;
-    text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
-    .header {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        background: #099d8d;
-        padding: 15px 45px;
-    }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #099d8d;
+    padding: 15px 45px;
+  }
 
-    .links {
-        background-color: #099d8d;
-        width: 400px;
-    }
+  .links {
+    background-color: #099d8d;
+    width: 400px;
+  }
 }
 
 /*HERO*/
@@ -131,16 +131,14 @@ body {
   background-color: #f1f1f1;
   padding: 30px 15px 15px 15px;
 }
-@media (min-width: 768px){
-  
-.strength-weaknesses {
- 
+@media (min-width: 768px) {
+  .strength-weaknesses {
     padding: 15px 45px 0px 45px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
 }
-    
 .strength h3 {
   color: #099d8d;
 }
@@ -154,10 +152,8 @@ body {
   .weaknesses {
     padding-bottom: 45px;
     padding-top: 0;
-
+  }
 }
-
-
 
 .weaknesses h3 {
   color: #099d8d;
@@ -277,7 +273,6 @@ body {
 
 /* RESPONSIVE TABLET */
 @media all and (min-width: 768px) {
- 
   /* RESPONSIVE TABLET - HERO */
   .box-claim {
     background-color: rgba(255, 255, 255, 0.8);
@@ -312,7 +307,6 @@ body {
 
 /* RESPONSIVE PANTALLA*/
 @media all and (min-width: 1200px) {
-
   /* RESPONSIVE PANTALLA - HERO */
   .img-hero {
     height: 550px;
@@ -337,4 +331,75 @@ body {
   /* RESPONSIVE PANTALLA - DAFO */
 
   /* RESPONSIVE PANTALLA - ADALABERS */
+}
+/*FOOTER*/
+.footer-container {
+  border-top: 1px solid grey;
+}
+.footer-HomePage {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .footer-HomePage {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+}
+.copy {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #b8b8b9;
+  /*font-family: OpenSans-Regular;*/
+}
+@media (min-width: 768px) {
+  .copy {
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+  }
+}
+.link-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*font-family: OpenSans-SemiBold*/
+}
+@media (min-width: 768px) {
+  .link-footer {
+    margin-top: 0;
+    width: 50%;
+    margin-top: 25px;
+    align-items: flex-end;
+  }
+}
+.specific-link {
+  text-decoration: none;
+  line-height: 24px;
+  font-family: OpenSans-SemiBold;
+  font-size: 14px;
+  color: #54585a;
+}
+.logo-footer {
+  margin-top: 30px;
+  margin-bottom: 45px;
+}
+@media (min-width: 768px) {
+  .logo-footer {
+    margin-top: -45px; /*Arreglar*/
+    margin-left: -11px; /*Arreglar*/
+    margin-bottom: 0;
+  }
+}
+.img-logo-footer {
+  height: 45px;
+  width: 115.9px;
 }
