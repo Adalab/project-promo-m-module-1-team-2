@@ -258,6 +258,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     gap: 2rem;
+    justify-content: center;
   }
 
   .person-info img {
@@ -270,7 +271,7 @@ body {
   }
 
   .wrapper-person-info {
-    flex-basis: 70%;
+    flex-basis: 60%;
   }
 
   .whoarewe .wrapper-rrss {
@@ -286,10 +287,6 @@ body {
   .person-info img {
     width: 278px;
     height: 278px;
-  }
-
-  .wrapper-person-info {
-    flex-basis: 50%;
   }
 }
 
