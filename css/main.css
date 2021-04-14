@@ -13,6 +13,8 @@
   --blue-green: #099d8d;
 }
 
+/* ESTILOS GENERALES */
+
 body {
   color: #54585a;
   font-family: var(--second-font-family);
@@ -167,6 +169,7 @@ body {
   background-color: #f1f1f1;
   padding: 30px 15px 15px 15px;
 }
+
 @media (min-width: 768px) {
   .strength-weaknesses {
     padding: 15px 45px 0px 45px;
@@ -221,6 +224,8 @@ body {
 
 .person-info img {
   background: #099d8d;
+  border: thick solid #ccc;
+  border-radius: 10px;
   height: 180px;
   width: 180px;
 }
@@ -242,7 +247,11 @@ body {
   color: #099d8d;
 }
 
-@media all and (min-width: 768px) {
+@media (min-width: 768px) {
+  .whoarewe {
+    gap: 5rem;
+  }
+
   .person-info {
     text-align: start;
 
@@ -251,12 +260,32 @@ body {
     gap: 2rem;
   }
 
+  .person-info img {
+    width: 207px;
+    height: 207px;
+  }
+
   .wrapper-person-info {
     flex-basis: 70%;
   }
 
   .whoarewe .wrapper-rrss {
     justify-content: start;
+  }
+}
+
+@media (min-width: 1200px) {
+  .whoarewe {
+    width: 70%;
+  }
+
+  .person-info img {
+    width: 278px;
+    height: 278px;
+  }
+
+  .wrapper-person-info {
+    flex-basis: 50%;
   }
 }
 
