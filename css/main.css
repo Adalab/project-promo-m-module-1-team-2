@@ -265,6 +265,10 @@ body {
     height: 207px;
   }
 
+  .person-info .odd {
+    order: 2;
+  }
+
   .wrapper-person-info {
     flex-basis: 70%;
   }
