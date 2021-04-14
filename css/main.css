@@ -285,7 +285,7 @@ body {
   margin-top: 30px;
   font-size: 14px;
   color: #b8b8b9;
-  /*font-family: OpenSans-Regular;*/
+  font-family: var(--second-font-family);
 }
 @media (min-width: 768px) {
   .copy {
@@ -299,7 +299,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*font-family: OpenSans-SemiBold*/
+  font-family: var(--second-font-family);
+  font-weight: bold;
 }
 @media (min-width: 768px) {
   .link-footer {
@@ -322,8 +323,8 @@ body {
 }
 @media (min-width: 768px) {
   .logo-footer {
-    margin-top: -45px; /*Arreglar*/
-    margin-left: -11px; /*Arreglar*/
+    margin-top: -45px;
+    margin-left: -11px;
     margin-bottom: 0;
   }
 }
