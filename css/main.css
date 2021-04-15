@@ -42,6 +42,7 @@ body {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  font-family: var(--main-font-family);
 }
 
 .links {
@@ -52,6 +53,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: var(--main-font-family);
 }
 
 .a {
@@ -71,7 +73,7 @@ body {
   }
 
   .title {
-    background-color: rgba(9, 157, 141, 0);;
+    background-color: rgba(9, 157, 141, 0);
   }
 
   .links {
@@ -85,7 +87,6 @@ body {
   .header {
     padding: 0 140px;
   }
-
 }
 
 /*HERO*/
@@ -95,12 +96,13 @@ body {
 
 .img-hero {
   background-size: cover;
-  background: url(../images/imagen-cabecera.png) center center;
+  background: url(../images/imagen-cabecera.png);
   height: 421px;
   width: 100%;
 }
 
 .box-claim {
+  display: block;
   background-color: white;
   height: 80px;
   width: 90%;
@@ -118,8 +120,12 @@ body {
   letter-spacing: normal;
   font-size: 16px;
   line-height: 25px;
-
+  color: black;
   padding: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 80px;
+  text-align: center;
 }
 
 @media all and (min-width: 1200px) {
@@ -139,6 +145,10 @@ body {
   .claim {
     font-size: 24px;
     line-height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 90px;
+    width: 90%;
   }
 }
 
