@@ -42,6 +42,7 @@ body {
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  font-family: var(--main-font-family);
 }
 
 .links {
@@ -52,6 +53,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: var(--main-font-family);
 }
 
 .a {
@@ -94,12 +96,13 @@ body {
 
 .img-hero {
   background-size: cover;
-  background: url(../images/imagen-cabecera.png) center center;
+  background: url(../images/imagen-cabecera.png);
   height: 421px;
   width: 100%;
 }
 
 .box-claim {
+  display: block;
   background-color: white;
   height: 80px;
   width: 90%;
@@ -117,8 +120,12 @@ body {
   letter-spacing: normal;
   font-size: 16px;
   line-height: 25px;
-
+  color: black;
   padding: 15px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 80px;
+  text-align: center;
 }
 
 @media all and (min-width: 1200px) {
@@ -138,6 +145,10 @@ body {
   .claim {
     font-size: 24px;
     line-height: 30px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 90px;
+    width: 90%;
   }
 }
 
@@ -322,13 +333,13 @@ body {
   border-top: 1px solid grey;
 }
 .footer-HomePage {
-  width: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media (min-width: 768px) {
   .footer-HomePage {
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     flex-direction: row;
@@ -353,6 +364,7 @@ body {
   }
 }
 .link-footer {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,7 +373,6 @@ body {
 }
 @media (min-width: 768px) {
   .link-footer {
-    margin-top: 0;
     width: 50%;
     margin-top: 25px;
     align-items: flex-end;
