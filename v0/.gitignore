@@ -45,7 +45,7 @@ node_modules/
 *.css.map
 
 # JS Sourcemaps
-*.js.mapA
+*.js.map
 
 # Public folder
 public
