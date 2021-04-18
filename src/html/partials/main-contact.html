@@ -15,7 +15,29 @@
       >todos los campos marcados con * son obligatorios.</small
     >
   </section>
-  <section class="form">
-    <form>formulario</form>
+  <section class="section__form">
+    <form class="form" action="/signup" method="post">
+      <ul class="ul-form">
+        <li>
+          <label for="fullName">Nombre completo *</label>
+          <input type="text" id="fullName" name="fullName" />
+        </li>
+        <li>
+          <label for="emailAddress">Email *</label>
+          <input type="email" id="emailAddress" name="emailAddress" />
+        </li>
+        <li>
+          <label for="telephone">Teléfono</label>
+          <input type="tel" id="telephone" name="telephone" />
+        </li>
+        <li>
+          <label for="message">Mensaje*</label>
+          <input type="text" id="message" name="message" />
+        </li>
+        <li class="button-form">
+          <button class="button" type="submit">ENVIAR</button>
+        </li>
+      </ul>
+    </form>
   </section>
 </main>
