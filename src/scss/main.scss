@@ -261,7 +261,6 @@ body {
 }
 
 .person-info img {
-  background: #099d8d;
   border: thick solid #ccc;
   border-radius: 10px;
   height: 180px;
@@ -282,7 +281,7 @@ body {
 }
 
 .whoarewe .wrapper-rrss .icon {
-  color: #099d8d;
+  color: var(--blue-green);
 }
 
 @media (min-width: 768px) {
