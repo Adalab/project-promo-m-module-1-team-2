@@ -1,0 +1,78 @@
+.hero {
+  position: relative;
+
+  .img-hero {
+    background: url(../images/imagen-cabecera-mobile.jpg) center;
+    height: 421px;
+    background-size: 100%;
+  }
+
+  .box-claim {
+    display: block;
+    background-color: white;
+    height: 80px;
+    width: 90%;
+
+    position: absolute;
+    bottom: -40px;
+    margin-left: 15px;
+
+    .claim {
+      font-family: var(--second-font-family);
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      font-size: 16px;
+      line-height: 25px;
+      color: black;
+      padding: 15px;
+      display: table-cell;
+      vertical-align: middle;
+      height: 80px;
+      text-align: center;
+    }
+  }
+
+  @mixin tablet() {
+    .box-claim {
+      background-color: rgba(255, 255, 255, 0.8);
+      width: 60%;
+
+      bottom: 0px;
+      margin-left: 46px;
+
+      .claim {
+        font-size: 18px;
+        padding: 15px 30px 15px 30px;
+        text-align: left;
+      }
+    }
+  }
+
+  @mixin desktop() {
+    .img-hero {
+      height: 550px;
+      background: url(../images/imagen-cabecera.jpg) center;
+      background-size: 100%;
+    }
+
+    .box-claim {
+      height: 90px;
+      width: 50%;
+
+      position: absolute;
+      bottom: 0px;
+      margin-left: 140px;
+
+      .claim {
+        font-size: 24px;
+        line-height: 30px;
+        display: table-cell;
+        vertical-align: middle;
+        height: 90px;
+        width: 90%;
+      }
+    }
+  }
+}
