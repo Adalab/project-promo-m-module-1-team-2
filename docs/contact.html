@@ -23,15 +23,14 @@
       <div class="title">
         <h1 class="h1">Nombre del grupo</h1>
       </div>
-
       <div class="links">
-        <a href="../index.html#team" style="text-decoration: none" class="a"
+        <a href="./index.html#team" style="text-decoration: none" class="a"
           >Equipo</a
         >
-        <a href="../index.html#adalabers" style="text-decoration: none" class="a"
+        <a href="./index.html#adalabers" style="text-decoration: none" class="a"
           >Quienes somos</a
         >
-        <a href="../contact.html" style="text-decoration: none" class="a"
+        <a href="./contact.html" style="text-decoration: none" class="a"
           >Contacto</a
         >
       </div>
@@ -53,30 +52,59 @@
           temporibus suscipit atque sequi quod reiciendis!
         </p>
         <small class="small-contact"
-          >todos los campos marcados con * son obligatorios.</small
+          >Todos los campos marcados con <span>*</span> son obligatorios.</small
         >
       </section>
       <section class="section__form">
-        <form class="form" action="/signup" method="post">
+        <form class="form" action="https://formspree.io/f/mzbyzvrg" method="post">
           <ul class="ul-form">
-            <li>
-              <label for="fullName">Nombre completo *</label>
-              <input type="text" id="fullName" name="fullName" />
+            <li class="item-form">
+              <label for="fullName">nombre completo <span>*</span></label>
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Nombre..."
+                minlength="5"
+                maxlength="40"
+                required
+              />
             </li>
-            <li>
-              <label for="emailAddress">Email *</label>
-              <input type="email" id="emailAddress" name="emailAddress" />
+            <li class="item-form">
+              <label for="emailAddress">email <span>*</span></label>
+              <input
+                type="email"
+                id="emailAddress"
+                name="emailAddress"
+                placeholder="nombre.apellidos@mail.com"
+                maxlength="40"
+                required
+              />
             </li>
-            <li>
-              <label for="telephone">Teléfono</label>
-              <input type="tel" id="telephone" name="telephone" />
+            <li class="item-form">
+              <label for="telephone">teléfono</label>
+              <input
+                type="tel"
+                id="telephone"
+                name="telephone"
+                placeholder="Ej: 123456789"
+                min="9"
+              />
             </li>
-            <li>
-              <label for="message">Mensaje*</label>
-              <input type="text" id="message" name="message" />
+            <li class="item-form">
+              <label for="message">mensaje <span>*</span></label>
+              <input
+                type="text"
+                id="message"
+                name="message"
+                placeholder="¿Qúe necesitas?"
+                maxlength="300"
+                required
+              />
             </li>
+            <li class="item-form"></li>
             <li class="button-form">
-              <button class="button" type="submit">ENVIAR</button>
+              <button class="button" type="submit">enviar</button>
             </li>
           </ul>
         </form>
@@ -91,9 +119,9 @@
           <p>Nombre del grupo &copy; 2021</p>
         </section>
         <section class="link-footer">
-          <a href="../index.html#team" class="specific-link">EQUIPO</a>
-          <a href="../index.html#adalabers" class="specific-link">QUIÉNES SOMOS</a>
-          <a href="../contact.html" class="specific-link">CONTACTO</a>
+          <a href="./index.html#team" class="specific-link">EQUIPO</a>
+          <a href="./index.html#adalabers" class="specific-link">QUIÉNES SOMOS</a>
+          <a href="./contact.html" class="specific-link">CONTACTO</a>
         </section>
         <section class="logo-footer">
           <img
