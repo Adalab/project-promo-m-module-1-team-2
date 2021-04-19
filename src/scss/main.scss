@@ -406,7 +406,7 @@ body {
 .contact {
   text-align: center;
   color: #54585a;
-  margin-bottom: 58px;
+  margin-bottom: 48px;
   margin-top: 30px;
 }
 
@@ -426,17 +426,43 @@ body {
 /* FORM */
 .form {
   margin: 0 auto;
-  width: 80%;
-  max-width: 300px;
+  text-align: left;
+  width: 90%;
+  white-space: pre-line;
+  text-transform: capitalize;
+}
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.form span {
+  color: rgb(20, 217, 196);
 }
 
-.form li {
-  margin-top: 10px;
+/* input:valid,
+textarea:valid {
+  background:;
+}
+
+input:invalid,
+textarea:invalid {
+  background:;
+} */
+
+::placeholder {
+  color: lightgray;
 }
 
 .button {
-  width: 80%;
-  max-width: 300px;
-  color: --blue-green;
+  width: 100%;
+  height: 40px;
+
   border-radius: 5px;
+  border: none;
+
+  color: white;
+  background-color: var(--blue-green);
+  text-transform: uppercase;
 }
