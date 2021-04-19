@@ -1,20 +1,42 @@
-/*BASE*/
+//CORE
+@import "core/mixins";
+@import "core/variables";
+@import "core/reset";
+
+//LAYOUT
+
+@import "layout/header";
+@import "layout/hero";
+@import "layout/team";
+@import "layout/adalabers";
+@import "layout/footer";
+
+//COMPONENTS
+
+@import "components/form";
+@import "components/hero";
+
+//PAGES
+
+@import "pages/contact.scss";
+
+/*
+BASE
 * {
   box-sizing: border-box;
   list-style: none;
   padding: 0;
   margin: 0;
-  /* outline: thin solid red;*/
+  /* outline: thin solid red;
 }
 
 :root {
   --main-font-family: "Rubik", sans-serif;
   --second-font-family: "Open Sans", sans-serif;
-  font-family: "Open Sans", sans-serif;
   --blue-green: #099d8d;
 }
 
-/* ESTILOS GENERALES */
+ESTILOS GENERALES 
 
 body {
   color: #54585a;
@@ -22,7 +44,7 @@ body {
   text-align: center;
 }
 
-/*HEADER + RESPONSIVE HEADER*/
+HEADER + RESPONSIVE HEADER
 .header {
   z-index: 99;
   width: 100%;
@@ -30,6 +52,8 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+
 
 .h1 {
   font-size: 16px;
@@ -45,6 +69,7 @@ body {
   text-transform: uppercase;
   font-family: var(--main-font-family);
 }
+
 
 .links {
   font-size: 15px;
@@ -62,6 +87,8 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+
 
 @media (min-width: 768px) {
   .header {
@@ -90,7 +117,10 @@ body {
   }
 }
 
-/*HERO*/
+
+
+HERO
+
 .hero {
   position: relative;
 }
@@ -128,6 +158,8 @@ body {
   text-align: center;
 }
 
+
+
 @media all and (min-width: 1200px) {
   .img-hero {
     height: 550px;
@@ -154,6 +186,7 @@ body {
   }
 }
 
+
 @media all and (min-width: 768px) {
   .box-claim {
     background-color: rgba(255, 255, 255, 0.8);
@@ -170,6 +203,7 @@ body {
   }
 }
 
+*/
 /* TEAM */
 .container-team {
   text-align: center;
