@@ -1,0 +1,72 @@
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="img-hero"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2 class="contact-title">contacto</h2>
+    <p class="text-contact">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam eligendi,
+      temporibus suscipit atque sequi quod reiciendis!
+    </p>
+    <small class="small-contact"
+      >Todos los campos marcados con <span>*</span> son obligatorios.</small
+    >
+  </section>
+  <section class="section__form">
+    <form class="form" action="https://formspree.io/f/mzbyzvrg" method="post">
+      <ul class="ul-form">
+        <li class="item-form">
+          <label for="fullName">nombre completo <span>*</span></label>
+          <input
+            type="text"
+            id="fullName"
+            name="fullName"
+            placeholder="Nombre..."
+            minlength="5"
+            maxlength="40"
+            required
+          />
+        </li>
+        <li class="item-form">
+          <label for="emailAddress">email <span>*</span></label>
+          <input
+            type="email"
+            id="emailAddress"
+            name="emailAddress"
+            placeholder="nombre.apellidos@mail.com"
+            maxlength="40"
+            required
+          />
+        </li>
+        <li class="item-form">
+          <label for="telephone">teléfono</label>
+          <input
+            type="tel"
+            id="telephone"
+            name="telephone"
+            placeholder="Ej: 123456789"
+            min="9"
+          />
+        </li>
+        <li class="item-form">
+          <label for="message">mensaje <span>*</span></label>
+          <input
+            type="text"
+            id="message"
+            name="message"
+            placeholder="¿Qúe necesitas?"
+            maxlength="300"
+            required
+          />
+        </li>
+        <li class="item-form"></li>
+        <li class="button-form">
+          <button class="button" type="submit">enviar</button>
+        </li>
+      </ul>
+    </form>
+  </section>
+</main>

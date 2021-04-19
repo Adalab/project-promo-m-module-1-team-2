@@ -10,6 +10,7 @@
 :root {
   --main-font-family: "Rubik", sans-serif;
   --second-font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   --blue-green: #099d8d;
 }
 
@@ -95,10 +96,9 @@ body {
 }
 
 .img-hero {
-  background-size: cover;
-  background: url(../images/imagen-cabecera.png);
+  background: url(../images/imagen-cabecera-mobile.jpg) center;
   height: 421px;
-  width: 100%;
+  background-size: 100%;
 }
 
 .box-claim {
@@ -131,6 +131,8 @@ body {
 @media all and (min-width: 1200px) {
   .img-hero {
     height: 550px;
+    background: url(../images/imagen-cabecera.jpg) center;
+    background-size: 100%;
   }
 
   .box-claim {
@@ -330,8 +332,10 @@ body {
 /*FOOTER*/
 .footer-container {
   border-top: 1px solid grey;
+  margin-top: 45px;
 }
 .footer-HomePage {
+  font-family: var(--second-font-family);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -367,7 +371,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: var(--second-font-family);
   font-weight: bold;
 }
 @media (min-width: 768px) {
@@ -380,7 +383,6 @@ body {
 .specific-link {
   text-decoration: none;
   line-height: 24px;
-  font-family: OpenSans-SemiBold;
   font-size: 14px;
   color: #54585a;
 }
@@ -398,4 +400,88 @@ body {
 .img-logo-footer {
   height: 45px;
   width: 115.9px;
+}
+
+/* CONTACT */
+.contact {
+  text-align: center;
+  color: #54585a;
+  margin-bottom: 48px;
+  margin-top: 30px;
+}
+
+.contact-title {
+  text-transform: uppercase;
+  color: #099d8d;
+  margin-bottom: 15px;
+}
+
+.text-contact {
+  padding: 15px 15px 30px 15px;
+}
+
+.small-contact {
+  font-size: 10px;
+}
+
+span {
+  color: rgb(20, 217, 196);
+}
+
+/* FORM */
+.form {
+  margin: 0 auto;
+  text-align: left;
+  width: 90%;
+  text-transform: capitalize;
+}
+@media (min-width: 768px) {
+  .form {
+    width: 60%;
+  }
+}
+input {
+  width: 100%;
+  padding: 10px;
+}
+label {
+  margin-bottom: 10px;
+}
+
+/* input:valid,
+textarea:valid {
+  background:;
+}
+
+input:invalid,
+textarea:invalid {
+  background:;
+} */
+
+::placeholder {
+  color: lightgray;
+}
+.item-form {
+  margin: 20px 0px 20px 0px;
+}
+
+#message {
+  height: 150px;
+  padding-top: 10px;
+}
+.button {
+  width: 100%;
+  height: 40px;
+
+  border-radius: 5px;
+  border: none;
+
+  color: white;
+  background-color: var(--blue-green);
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .button {
+    width: 50%;
+  }
 }
