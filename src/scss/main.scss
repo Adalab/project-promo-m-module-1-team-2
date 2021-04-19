@@ -21,7 +21,7 @@
 @import "pages/contact.scss";
 
 /*
-BASE
+---> BASE
 * {
   box-sizing: border-box;
   list-style: none;
@@ -36,15 +36,14 @@ BASE
   --blue-green: #099d8d;
 }
 
-ESTILOS GENERALES 
-
+---> ESTILOS GENERALES 
 body {
   color: #54585a;
   font-family: var(--second-font-family);
   text-align: center;
 }
 
-HEADER + RESPONSIVE HEADER
+---> HEADER + RESPONSIVE HEADER
 .header {
   z-index: 99;
   width: 100%;
@@ -52,8 +51,6 @@ HEADER + RESPONSIVE HEADER
   display: flex;
   flex-direction: column;
 }
-
-
 
 .h1 {
   font-size: 16px;
@@ -69,7 +66,6 @@ HEADER + RESPONSIVE HEADER
   text-transform: uppercase;
   font-family: var(--main-font-family);
 }
-
 
 .links {
   font-size: 15px;
@@ -87,8 +83,6 @@ HEADER + RESPONSIVE HEADER
   text-transform: uppercase;
   text-decoration: none;
 }
-
-
 
 @media (min-width: 768px) {
   .header {
@@ -117,10 +111,7 @@ HEADER + RESPONSIVE HEADER
   }
 }
 
-
-
-HERO
-
+---> HERO
 .hero {
   position: relative;
 }
@@ -158,8 +149,6 @@ HERO
   text-align: center;
 }
 
-
-
 @media all and (min-width: 1200px) {
   .img-hero {
     height: 550px;
@@ -186,7 +175,6 @@ HERO
   }
 }
 
-
 @media all and (min-width: 768px) {
   .box-claim {
     background-color: rgba(255, 255, 255, 0.8);
@@ -203,8 +191,7 @@ HERO
   }
 }
 
-*/
-/* TEAM */
+---> TEAM 
 .container-team {
   text-align: center;
   color: #54585a;
@@ -227,8 +214,7 @@ HERO
   padding: 15px 15px 30px 15px;
 }
 
-/*DAFO*/
-
+---> DAFO
 .triangle {
   width: 30px;
   height: 30px;
@@ -273,7 +259,7 @@ HERO
   }
 }
 
-/* ADALABERS */
+---> ADALABERS
 .whoarewe {
   width: 85%;
   margin: 0 auto;
@@ -363,7 +349,7 @@ HERO
   }
 }
 
-/*FOOTER*/
+---> FOOTER
 .footer-container {
   border-top: 1px solid grey;
   margin-top: 45px;
@@ -436,7 +422,7 @@ HERO
   width: 115.9px;
 }
 
-/* CONTACT */
+---> CONTACT
 .contact {
   text-align: center;
   color: #54585a;
@@ -462,7 +448,7 @@ span {
   color: rgb(20, 217, 196);
 }
 
-/* FORM */
+---> FORM
 .form {
   margin: 0 auto;
   text-align: left;
@@ -482,7 +468,7 @@ label {
   margin-bottom: 10px;
 }
 
-/* input:valid,
+input:valid,
 textarea:valid {
   background:;
 }
@@ -490,7 +476,7 @@ textarea:valid {
 input:invalid,
 textarea:invalid {
   background:;
-} */
+} 
 
 ::placeholder {
   color: lightgray;
@@ -519,3 +505,4 @@ textarea:invalid {
     width: 50%;
   }
 }
+*/

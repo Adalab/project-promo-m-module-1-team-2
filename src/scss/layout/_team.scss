@@ -1,0 +1,68 @@
+/*TEAM*/
+.container-team {
+  text-align: center;
+  color: #54585a;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .container-team {
+    margin-bottom: 30px;
+    margin-top: 45px;
+  }
+}
+
+.team-title {
+  color: #099d8d;
+  margin-bottom: 15px;
+}
+
+.team {
+  padding: 15px 15px 30px 15px;
+}
+
+/*DAFO*/
+
+.triangle {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  position: relative;
+  transform: rotate(45deg);
+  margin: -15px auto;
+}
+.strength-weaknesses {
+  background-color: #f1f1f1;
+  padding: 30px 15px 15px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.strength h3 {
+  padding: 10px;
+  color: #099d8d;
+}
+
+.weaknesses {
+  padding-bottom: 45px;
+}
+
+.weaknesses h3 {
+  padding: 10px;
+  color: #099d8d;
+}
+
+@media (min-width: 768px) {
+  .strength-weaknesses {
+    padding: 15px 45px 0px 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+  }
+  .weaknesses {
+    padding-bottom: 45px;
+    padding-top: 0;
+  }
+}
