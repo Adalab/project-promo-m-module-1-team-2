@@ -44,13 +44,12 @@
       justify-content: center;
       margin: 25px 0;
 
-      .icon {
+      i {
         color: $color-bluegreen;
-
-        .fab:after {
-          content: "·";
-          margin: 0 2px 0 7px;
-        }
+      }
+      .fab:after {
+        content: "·";
+        margin: 0 2px 0 7px;
       }
     }
   }
