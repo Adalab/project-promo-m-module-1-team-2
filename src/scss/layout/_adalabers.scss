@@ -29,6 +29,106 @@
       width: 180px;
     }
 
+    & .img-elia:hover {
+      background: url(../images/Memoji-Elia.png) left top no-repeat;
+      background-size: 180px 180px;
+      padding-left: 180px;
+    }
+
+    @media (min-width: 768px) {
+      & .img-elia:hover {
+        background-size: 207px 207px;
+        padding-left: 207px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & .img-elia:hover {
+        background-size: 278px 278px;
+        padding-left: 278px;
+      }
+    }
+
+    & .img-rosa:hover {
+      background: url(../images/Memoji-Rosa.png) left top no-repeat;
+      background-size: 180px 180px;
+      padding-left: 180px;
+    }
+
+    @media (min-width: 768px) {
+      & .img-rosa:hover {
+        background-size: 207px 207px;
+        padding-left: 207px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & .img-rosa:hover {
+        background-size: 278px 278px;
+        padding-left: 278px;
+      }
+    }
+
+    & .img-patri:hover {
+      background: url(../images/Memoji-Pati.png) left top no-repeat;
+      background-size: 180px 180px;
+      padding-left: 180px;
+    }
+
+    @media (min-width: 768px) {
+      & .img-patri:hover {
+        background-size: 207px 207px;
+        padding-left: 207px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & .img-patri:hover {
+        background-size: 278px 278px;
+        padding-left: 278px;
+      }
+    }
+
+    & .img-maca:hover {
+      background: url(../images/Memoji-Maca.png) left top no-repeat;
+      background-size: 180px 180px;
+      padding-left: 180px;
+    }
+
+    @media (min-width: 768px) {
+      & .img-maca:hover {
+        background-size: 207px 207px;
+        padding-left: 207px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & .img-maca:hover {
+        background-size: 278px 278px;
+        padding-left: 278px;
+      }
+    }
+
+    & .img-maria:hover {
+      background: url(../images/Memoji-Maria.png) left top no-repeat;
+      background-size: 180px 180px;
+      padding-left: 180px;
+    }
+
+    @media (min-width: 768px) {
+      & .img-maria:hover {
+        background-size: 207px 207px;
+        padding-left: 207px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & .img-maria:hover {
+        background-size: 278px 278px;
+        padding-left: 278px;
+      }
+    }
+
     .wrapper-person-info h3 {
       color: black;
       margin: 1rem 0;
