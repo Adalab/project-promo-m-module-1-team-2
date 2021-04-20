@@ -15,14 +15,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="assets/images/favicon-s-5.png"
+    />
   </head>
 
   <body>
     <!-- HEADER -->
     <header class="header">
-      <div class="title">
-        <h1 class="h1">Nombre del grupo</h1>
-      </div>
+      <a class="title" href="./index.html">
+        <h1 class="h1">
+          <img
+            src="assets/images/logo-sense-5-horizontal-invert.png"
+            alt="logo-sense-5-invert"
+          />
+        </h1>
+      </a>
       <div class="links">
         <a href="./index.html#team" style="text-decoration: none" class="a"
           >Equipo</a
@@ -41,7 +51,6 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-
         <div class="img-hero">
           <div class="memoji-hero rosa"></div>
           <div class="memoji-hero pati"></div>
@@ -104,7 +113,12 @@
 
         <!-- INFO ELIA -->
         <article class="person-info">
-          <img src="./assets/images/Memoji-Elia-bluegreen.png" alt="Foto de Elia Alonso" />
+          <img
+            src="./assets/images/Memoji-Elia-bluegreen.png"
+            alt="Foto de Elia Alonso"
+            class="img-elia"
+          />
+          
 
           <div class="wrapper-person-info">
             <h3>Elia Alonso</h3>
@@ -134,7 +148,11 @@
 
         <!-- INFO ROSA -->
         <article class="person-info">
-          <img class="odd" src="./assets/images/Memoji-Rosa-bluegreen.png" alt="Foto de Rosa Berned" />
+          <img
+            class="odd img-rosa"
+            src="./assets/images/Memoji-Rosa-bluegreen.png"
+            alt="Foto de Rosa Berned"
+          />
           <div class="wrapper-person-info">
             <h3>Rosa Berned</h3>
             <p>
@@ -163,14 +181,19 @@
 
         <!-- INFO PATRI -->
         <article class="person-info">
-          <img src="./assets/images/Memoji-Pati-bluegreen.png" alt="Foto de Patricia Lobo" />
+          <img
+            src="./assets/images/Memoji-Pati-bluegreen.png"
+            alt="Foto de Patricia Lobo"
+            class="img-patri"
+          />
           <div class="wrapper-person-info">
             <h3>Patricia Lobo</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, ipsa
-              tempore voluptas est earum facilis, doloribus blanditiis molestias
-              nihil non excepturi nemo veniam suscipit beatae libero dolor minima
-              accusantium voluptatibus.
+              Programadora front-end en proceso, la polivalencia es mi fuerte y mi
+              lado IT quiere salir, explorar, conocer y dar todo de mi en un sector
+              en el que la constante evolución es la premisa principal, me gustaría
+              crecer con ese mismo flujo y solamente poner etiquetas y clases a mi
+              código.
             </p>
             <ul class="wrapper-rrss">
               <li class="icon" id="twitter">
@@ -178,32 +201,49 @@
               </li>
 
               <li class="icon" id="linkedin">
-                <i class="fab fa-linkedin-in"></i>
+                <a
+                  href="https://www.linkedin.com/in/patricia-lobo-tejedor/"
+                  target="_blank"
+                >
+                  <i class="fab fa-linkedin-in"></i
+                ></a>
               </li>
 
               <li class="icon" id="github">
-                <i class="fab fa-github-alt"></i>
+                <a href="https://github.com/PatriciaLoboTejedor" target="_blank"
+                  ><i class="fab fa-github-alt"></i
+                ></a>
               </li>
 
-              <li class="icon" id="email"><i class="fas fa-envelope"></i></li>
+              <li class="icon" id="email">
+                <a href="mailto:patricialobotejedor@gmail.com"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </li>
             </ul>
           </div>
         </article>
 
         <!-- INFO MACA -->
         <article class="person-info">
-          <img class="odd" src="./assets/images/Memoji-Maca-bluegreen.png" alt="Foto de Maca González" />
+          <img
+            class="odd img-maca"
+            src="./assets/images/Memoji-Maca-bluegreen.png"
+            alt="Foto de Maca González"
+          />
           <div class="wrapper-person-info">
             <h3>Maca González</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, ipsa
-              tempore voluptas est earum facilis, doloribus blanditiis molestias
-              nihil non excepturi nemo veniam suscipit beatae libero dolor minima
-              accusantium voluptatibus.
+              La música, el dibujo, la naturaleza y los animales me definen.
+              Apasionada del aprendizaje y nuevos retos. Fisioterapeuta y Osteópata
+              con más de 10 años de experiencia. He decidido darle a mi vida un giro
+              de 180° e introducirme en el mundo front-end de la mano de Adalab.
             </p>
             <ul class="wrapper-rrss">
               <li class="icon" id="twitter">
-                <i class="fab fa-twitter"></i>
+                <a href="https://twitter.com/@MacarenaGlezAlonso" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
               </li>
 
               <li class="icon" id="linkedin">
@@ -211,17 +251,23 @@
               </li>
 
               <li class="icon" id="github">
-                <i class="fab fa-github-alt"></i>
+                <a href="https://github.com/maca23" target="_blank"
+                  ><i class="fab fa-github-alt"></i
+                ></a>
               </li>
 
-              <li class="icon" id="email"><i class="fas fa-envelope"></i></li>
+              <li class="icon" id="email"><a href="mailto:macarenagonzalezalonso@gmail.com"><i class="fas fa-envelope"></a></i></li>
             </ul>
           </div>
         </article>
 
         <!-- INFO MARIA -->
         <article class="person-info">
-          <img src="./assets/images/Memoji-Maria-bluegreen.png" alt="Foto de María Núñez" />
+          <img
+            src="./assets/images/Memoji-Maria-bluegreen.png"
+            alt="Foto de María Núñez"
+            class="img-maria"
+          />
           <div class="wrapper-person-info">
             <h3>María Núñez</h3>
             <p>
@@ -247,14 +293,18 @@
             </ul>
           </div>
         </article>
+        <button class="buttonC">
+          <a href="./darkside.html">Nada es lo que parece...</a>
+        </button>
       </section>
     </main>
+
 
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__container">
         <section class="footer__copy">
-          <p>Nombre del grupo &footer__copy; 2021</p>
+          <p>Sense5 &copy; 2021</p>
         </section>
         <section class="footer__linksContainer">
           <a href="./index.html#team" class="footer__link">EQUIPO</a>
