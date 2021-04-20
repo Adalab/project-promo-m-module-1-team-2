@@ -3,55 +3,77 @@
   margin: 0 auto;
   text-align: left;
   width: 90%;
+  max-width: 440px;
   text-transform: capitalize;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: stretch;
+  gap: 0.8rem;
 }
-@media (min-width: 768px) {
-  .form {
-    width: 60%;
-  }
+
+textarea {
+  display: block;
+  font-family: $root-font-family;
+  font-size: 14px;
 }
-input {
+
+input,
+textarea {
+  margin-top: 7px;
   width: 100%;
   padding: 10px;
 }
-label {
-  margin-bottom: 10px;
+
+textarea {
+  height: 105px;
 }
 
-/* input:valid,
-  textarea:valid {
-    background:;
-  }
-  
-  input:invalid,
-  textarea:invalid {
-    background:;
-  } */
+label {
+  color: $color-font;
+}
 
 ::placeholder {
-  color: lightgray;
-}
-.item-form {
-  margin: 20px 0px 20px 0px;
+  color: black;
 }
 
-#message {
-  height: 150px;
-  padding-top: 10px;
-}
 .button {
-  width: 100%;
-  height: 40px;
-
   border-radius: 5px;
   border: none;
-
+  padding: 0.8rem;
+  margin-top: 15px;
   color: white;
-  background-color: var(--blue-green);
+  background-color: $color-bluegreen;
   text-transform: uppercase;
 }
+
 @media (min-width: 768px) {
   .button {
     width: 50%;
+    align-self: flex-end;
+  }
+}
+
+@media (min-width: 1200px) {
+  .form {
+    max-width: 600px;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    label {
+      width: 100%;
+    }
+
+    .email {
+      width: 60%;
+    }
+
+    .telf {
+      width: 35%;
+    }
+
+    .button {
+      transform: translate(100%, 0);
+    }
   }
 }

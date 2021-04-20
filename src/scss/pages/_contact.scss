@@ -2,8 +2,9 @@
 .contact {
   text-align: center;
   color: #54585a;
-  margin-bottom: 48px;
-  margin-top: 30px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 440px;
 }
 
 .contact-title {
@@ -22,4 +23,10 @@
 
 span {
   color: rgb(20, 217, 196);
+}
+
+@media (min-width: 1200px) {
+  .contact {
+    max-width: 600px;
+  }
 }
