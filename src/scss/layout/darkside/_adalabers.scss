@@ -23,14 +23,13 @@
     margin-bottom: 10px;
 
     & img {
-      border: thick solid white;
       border-radius: 10px;
       height: 180px;
       width: 180px;
     }
 
     & .img-eliaColor:hover {
-      background: url() left top no-repeat;
+      background: url("../images/Elia-color.png") left top no-repeat;
       background-size: 180px 180px;
       padding-left: 180px;
     }
@@ -50,7 +49,7 @@
     }
 
     & .img-rosaColor:hover {
-      background: url() left top no-repeat;
+      background: url("../images/Rosa-color.jpg") left top no-repeat;
       background-size: 180px 180px;
       padding-left: 180px;
     }
@@ -70,7 +69,7 @@
     }
 
     & .img-patriColor:hover {
-      background: url() left top no-repeat;
+      background: url("../images/Pati-color.png") left top no-repeat;
       background-size: 180px 180px;
       padding-left: 180px;
     }
@@ -90,7 +89,7 @@
     }
 
     & .img-macaColor:hover {
-      background: url() left top no-repeat;
+      background: url("../images/Maca-color.png") left top no-repeat;
       background-size: 180px 180px;
       padding-left: 180px;
     }
@@ -110,7 +109,7 @@
     }
 
     & .img-mariaColor:hover {
-      background: url() left top no-repeat;
+      background: url("../images/Maria-color.png") left top no-repeat;
       background-size: 180px 180px;
       padding-left: 180px;
     }
@@ -144,24 +143,30 @@
       justify-content: center;
       margin: 25px 0;
       color: white;
-
+      i {
+        color: white;
+      }
       .iconD {
         color: white;
+      }
+      .fab:after {
+        content: "·";
+        margin: 0 2px 0 7px;
       }
     }
   }
 }
 .buttonD {
   text-decoration: none;
-  width: 70vw;
+  border: none;
+
+  min-width: 250px;
+  max-width: 300px;
   height: 40px;
 
   border-radius: 5px;
-  border: none;
-
   text-align: center;
-  margin: 0 auto;
-  padding-top: 8px;
+  margin: auto;
 
   color: white;
   background-color: rgb(225, 46, 65);
