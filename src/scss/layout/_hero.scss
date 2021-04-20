@@ -1,9 +1,52 @@
 .hero {
   position: relative;
+
   .img-hero {
-    background: url(../images/imagen-cabecera-mobile.jpg) center;
-    height: 421px;
+    background: url(../images/imagen-cabecera-mobile.jpg) center no-repeat;
     background-size: 100%;
+    height: 421px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+
+    .memoji-hero {
+      animation: 4s movement ease-in-out infinite;
+      border-radius: 30%;
+      height: 200px;
+      width: 200px;
+      outline: thin solid red;
+    }
+
+    .elia {
+      background: url(./assets/images/Memoji-Elia.png) no-repeat center;
+      background-size: contain;
+      animation: 4s movement2 ease-in-out infinite;
+    }
+
+    .rosa {
+      background: url(./assets/images/Memoji-Rosa.png) no-repeat center;
+      background-size: contain;
+    }
+
+    .pati {
+      background: url(./assets/images/Memoji-Pati.png) no-repeat center;
+      background-size: contain;
+      animation: 4s movement3 ease-in-out infinite;
+    }
+
+    .maca {
+      background: url(./assets/images/Memoji-Maca.png) no-repeat center;
+      background-size: contain;
+    }
+
+    .maria {
+      background: url(./assets/images/Memoji-Maria.png) no-repeat center;
+      background-size: contain;
+      animation: 4s movement2 ease-in-out infinite;
+    }
   }
   .box-claim {
     background-color: white;
@@ -65,5 +108,59 @@
         vertical-align: middle;
       }
     }
+  }
+}
+
+@keyframes movement {
+  from {
+    transform: translateY(5%);
+  }
+
+  40% {
+    transform: translateX(-5%);
+  }
+
+  65% {
+    transform: translateX(5%);
+  }
+
+  to {
+    transform: translateY(5%);
+  }
+}
+
+@keyframes movement2 {
+  from {
+    transform: translateY(-5%);
+  }
+
+  40% {
+    transform: translateX(7%);
+  }
+
+  65% {
+    transform: translateX(-7%);
+  }
+
+  to {
+    transform: translateY(-5%);
+  }
+}
+
+@keyframes movement3 {
+  from {
+    transform: translateY(20%);
+  }
+
+  40% {
+    transform: translateX(-5%);
+  }
+
+  65% {
+    transform: translateX(5%);
+  }
+
+  to {
+    transform: translateY(20%);
   }
 }
