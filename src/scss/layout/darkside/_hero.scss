@@ -1,25 +1,25 @@
-.hero {
+.heroD {
   position: relative;
-  .img-hero {
-    background: url(../images/social-media-width.jpg) center;
+  .img-heroD {
+    background: url(../images/slide-mobile1.png) center;
     height: 421px;
     background-size: 100%;
   }
-  .box-claim {
-    background-color: white;
+  .box-claimD {
+    background-color: black;
 
     height: 80px;
     bottom: -40px;
     position: absolute;
-    text-align: center;
 
-    margin-left: 15px;
+    margin: 0 auto;
     width: 90%;
 
-    .claim {
+    .claimD {
       font-size: 16px;
       line-height: 25px;
-      color: black;
+      text-align: center;
+      color: white;
       padding: 15px;
       height: 80px;
       font-family: $main-font-family;
@@ -28,13 +28,13 @@
 }
 
 @media (min-width: 768px) {
-  .hero {
-    .box-claim {
-      background-color: rgba(255, 255, 255, 0.8);
+  .heroD {
+    .box-claimD {
+      background-color: rgba(0, 0, 0, 0.8);
       width: 60%;
       bottom: 0px;
       margin-left: 46px;
-      .claim {
+      .claimD {
         font-size: 18px;
         padding: 15px 30px 15px 30px;
         text-align: left;
@@ -44,16 +44,16 @@
 }
 
 @media (min-width: 1200px) {
-  .hero {
-    .img-hero {
+  .heroD {
+    .img-heroD {
       height: 550px;
-      background: url(../images/social-media.jpg) center;
+      background: url(../images/imagen-cabecera-invert.jpg) center;
       background-size: 100%;
     }
-    .box-claim {
+    .box-claimD {
       height: 90px;
       margin-left: 140px;
-      .claim {
+      .claimD {
         font-size: 24px;
         line-height: 30px;
         display: table-cell;

@@ -1,21 +1,21 @@
-.header {
+.headerD {
   z-index: 99;
   width: 100%;
   position: fixed;
   display: flex;
   flex-direction: column;
 
-  .title {
+  .titleD {
     height: 60px;
-    color: #ffffff;
-    background: rgba(9, 157, 141, 0.95);
+    color: black;
+    background: rgba(241, 101, 116, 0.95);
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    font-family: var(--main-font-family);
+    font-family: $main-font-family;
 
-    .h1 {
+    .h1D {
       font-size: 16px;
       & img {
         height: 55px;
@@ -23,18 +23,18 @@
     }
   }
 
-  .links {
+  .linksD {
     font-size: 15px;
     height: 45px;
     padding: 0 16px;
-    background-color: rgba(20, 217, 196, 0.9);
+    background-color: rgba(225, 46, 65, 0.9);
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: $main-font-family;
 
-    .a {
-      color: #ffffff;
+    .aD {
+      color: black;
       text-transform: uppercase;
       text-decoration: none;
     }
@@ -42,21 +42,21 @@
 }
 
 @media (min-width: 768px) {
-  .header {
+  .headerD {
     height: 60px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: rgba(9, 157, 141, 0.95);
+    background-color: rgba(225, 46, 65, 0.9);
     padding: 15px 45px;
 
-    .title {
-      background-color: rgba(9, 157, 141, 0);
+    .titleD {
+      background-color: rgba(225, 46, 65, 0);
     }
 
-    .links {
-      background-color: rgba(9, 157, 141, 0);
+    .linksD {
+      background-color: rgba(225, 46, 65, 0);
       width: 400px;
       padding: 0;
     }
