@@ -25,6 +25,10 @@ textarea {
   padding: 10px;
 }
 
+input:invalid {
+  border: thin solid red;
+}
+
 textarea {
   height: 105px;
 }
