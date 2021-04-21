@@ -178,8 +178,6 @@
 @media (min-width: 768px) {
   .whoarewe {
     .person-info {
-      text-align: start;
-
       display: flex;
       flex-flow: row wrap;
       gap: 2rem;
@@ -192,10 +190,12 @@
         height: 207px;
       }
       .odd {
+        text-align: start;
         order: 2;
       }
       .wrapper-person-info {
-        flex-basis: 60%;
+        text-align: end;
+        width: 60%;
         .wrapper-rrss {
           justify-content: start;
         }
