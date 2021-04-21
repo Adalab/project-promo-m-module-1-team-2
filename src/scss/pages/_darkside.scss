@@ -5,24 +5,15 @@
   .whoarewe {
     .person-info {
       filter: invert(1);
-      & .img-eliaColor:hover {
-        filter: grayscale(100);
-      }
-      & .img-rosaColor:hover {
-        filter: grayscale(100);
-      }
-      & .img-patriColor:hover {
-        filter: grayscale(100);
-      }
-      & .img-macaColor:hover {
-        filter: grayscale(100);
-      }
-      & .img-mariaColor:hover {
+      & .img-grey:hover {
         filter: grayscale(100);
       }
       .wrapper-person-info {
         filter: invert(1);
       }
     }
+  }
+  .footer__logoImg {
+    filter: invert(1);
   }
 }
