@@ -7,7 +7,7 @@
     filter: invert(1);
   }
   .box-claimD {
-    background-color: black;
+    background-color: #242424;
     box-sizing: border-box;
     height: 80px;
     bottom: -40px;
@@ -27,7 +27,7 @@
 @media (min-width: 768px) {
   .heroD {
     .box-claimD {
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(24, 24, 24, 0.8);
       width: 60%;
       bottom: 0px;
       margin-left: 46px;

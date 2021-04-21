@@ -52,15 +52,17 @@
   }
   .box-claim {
     background-color: white;
-    bottom: -35px;
-    width: 80%;
-    left: 15px;
-    padding: 25px;
+    box-sizing: border-box;
+    height: 80px;
+    bottom: -40px;
+    width: 85vw;
+    margin-left: 15px;
     position: absolute;
 
     .claim {
       font-size: 16px;
       color: #141414;
+      padding: 32px 15px;
       font-family: $main-font-family;
     }
   }
@@ -71,9 +73,12 @@
     .box-claim {
       background-color: rgba(255, 255, 255, 0.8);
       width: 60%;
-      left: 46px;
+      bottom: 0px;
+      margin-left: 46px;
       .claim {
+        padding: 29px 15px;
         font-size: 18px;
+        text-align: left;
       }
     }
   }
@@ -85,9 +90,11 @@
       height: 550px;
     }
     .box-claim {
-      left: 140px;
+      height: 90px;
+      margin-left: 140px;
       .claim {
         font-size: 24px;
+        padding: 30px 15px;
       }
     }
   }
