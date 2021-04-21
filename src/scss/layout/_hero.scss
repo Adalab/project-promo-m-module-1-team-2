@@ -16,11 +16,8 @@
     .memoji-hero {
       animation: 4s movement ease-in-out infinite;
 
-      height: 30%;
-      width: 30%;
-
-      max-height: 207px;
-      max-width: 207px;
+      height: 207px;
+      width: 207px;
     }
 
     &:hover {
@@ -58,7 +55,8 @@
   }
   .box-claim {
     background-color: white;
-    bottom: -30px;
+    bottom: -35px;
+    border: none;
     left: 40px;
     padding: 1.4rem;
     position: absolute;
@@ -77,22 +75,11 @@
 }
 
 @media (min-width: 768px) {
-  .hero {
-    .img-hero {
-      .memoji-hero {
-        height: 207px;
-        width: 207px;
-      }
-    }
-
-    .box-claim {
-      background-color: rgba(255, 255, 255, 0.8);
-      width: 60%;
-      left: 46px;
-      .claim {
-        font-size: 1.2rem;
-        text-align: left;
-      }
+  .box-claim {
+    background-color: rgba(255, 255, 255, 0.8);
+    left: 46px;
+    h2 {
+      font-size: 1.2rem;
     }
   }
 }
@@ -102,7 +89,7 @@
     height: 550px;
     .box-claim {
       margin-left: 140px;
-      .claim {
+      h2 {
         font-size: 1.5rem;
       }
     }
