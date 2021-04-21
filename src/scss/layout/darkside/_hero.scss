@@ -1,9 +1,10 @@
 .heroD {
   position: relative;
   .img-heroD {
-    background: url(../images/imagen-cabecera-invert.jpg) center;
+    background: url(../images/fondo-hero.svg) center;
     height: 421px;
-    background-size: 100%;
+    background-size: cover;
+    filter: invert(1);
   }
   .box-claimD {
     background-color: black;
@@ -43,8 +44,6 @@
   .heroD {
     .img-heroD {
       height: 550px;
-      background: url(../images/imagen-cabecera-invert.jpg) center;
-      background-size: 100%;
     }
     .box-claimD {
       height: 90px;

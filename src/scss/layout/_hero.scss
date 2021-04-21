@@ -2,8 +2,8 @@
   position: relative;
 
   .img-hero {
-    background: url(../images/imagen-cabecera-mobile.jpg) center;
-    background-size: 100%;
+    background: url(../images/fondo-hero.svg) center;
+    background-size: cover;
     height: 421px;
     margin: 0 auto;
 
@@ -15,9 +15,11 @@
     .memoji-hero {
       animation: 4s movement ease-in-out infinite;
       border-radius: 30%;
-      height: 200px;
-      width: 200px;
-      outline: thin solid red;
+      max-height: 250px;
+      max-width: 250px;
+
+      height: 80vh;
+      width: 80vw;
     }
 
     .elia {
@@ -86,8 +88,6 @@
   .hero {
     .img-hero {
       height: 550px;
-      background: url(../images/imagen-cabecera-mobile.jpg) center;
-      background-size: 100%;
     }
     .box-claim {
       height: 90px;
