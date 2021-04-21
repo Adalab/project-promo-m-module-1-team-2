@@ -1,68 +1,77 @@
-/*FOOTER*/
-.footer-containerD {
-  border-top: 1px solid white;
-  background-color: black;
+.footerD {
+  border-top: 1px solid grey;
   margin-top: 45px;
-  .footer-HomePageD {
+
+  &__containerD {
+    font-family: $root-font-family;
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .copyD {
-      margin-top: 30px;
-      font-size: 14px;
-      color: white;
-    }
-    .link-footerD {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      font-weight: bold;
-      .specific-linkD {
-        text-decoration: none;
-        line-height: 24px;
-        font-size: 14px;
-        color: white;
-      }
-    }
-    .logo-footerD {
-      margin-top: 30px;
-      margin-bottom: 45px;
-      .img-logo-footerD {
-        height: 45px;
-        width: 115.9px;
-      }
-    }
   }
-}
 
-@media (min-width: 768px) {
-  .footer-containerD {
-    .footer-HomePageD {
+  @media (min-width: 768px) {
+    &__containerD {
       width: 85%;
       margin-left: auto;
       margin-right: auto;
-      flex-direction: row;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      align-items: flex-start;
-      margin-bottom: 60px;
-      .copyD {
-        margin-top: 20px;
-        width: 50%;
-        display: flex;
-        align-items: flex-start;
-      }
-      .link-footerD {
-        width: 50%;
-        margin-top: 25px;
-        align-items: flex-end;
-      }
-      .logo-footerD {
-        margin-top: -45px;
-        margin-left: -11px;
-        margin-bottom: 0;
-      }
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 60px 45px 60px;
     }
+  }
+
+  &__copyD {
+    margin-top: 30px;
+    color: white;
+  }
+
+  @media (min-width: 768px) {
+    &__copyD {
+      grid-column: 1 / 2;
+      padding-bottom: 15px;
+    }
+  }
+
+  &__linksContainerD {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  @media (min-width: 768px) {
+    &__linksContainerD {
+      margin-top: 25px;
+      grid-column: 2 / 3;
+      grid-row: 1 / 3;
+      align-items: flex-end;
+    }
+  }
+
+  &__linkD {
+    text-decoration: none;
+    line-height: 24px;
+    font-size: 14px;
+    color: white;
+  }
+
+  &__logoD {
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: 768px) {
+    &__logoD {
+      margin-top: 0;
+      margin-bottom: 0;
+      grid-row: 2 / 3;
+    }
+  }
+
+  &__logoImgD {
+    height: 45px;
+    width: 115.9px;
   }
 }
