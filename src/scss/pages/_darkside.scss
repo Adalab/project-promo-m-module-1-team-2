@@ -1,3 +1,128 @@
-.bg-coral {
-  background-color: rgba(225, 46, 65, 0.9);
+.body-dark {
+  filter: invert(1);
+  background-color: #242424;
+
+  .whoarewe {
+    .person-info {
+      filter: invert(1);
+      & .img-eliaColor:hover {
+        filter: grayscale(100);
+      }
+      & .img-rosaColor:hover {
+        filter: grayscale(100);
+      }
+      & .img-patriColor:hover {
+        filter: grayscale(100);
+      }
+      & .img-macaColor:hover {
+        filter: grayscale(100);
+      }
+      & .img-mariaColor:hover {
+        filter: grayscale(100);
+      }
+      .wrapper-person-info {
+        filter: invert(1);
+      }
+    }
+  }
 }
+/*& .img-eliaColor:hover {
+      background: url("../images/Elia-color.png") left top no-repeat;
+      background-size: 180px 180px;
+      padding-left: 180px;
+    }
+
+    @media (min-width: 768px) {
+      & .img-eliaColor:hover {
+        background-size: 207px 207px;
+        padding-left: 207px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & .img-eliaColor:hover {
+        background-size: 278px 278px;
+        padding-left: 278px;
+      }
+    }
+
+    & .img-rosaColor:hover {
+      background: url("../images/Rosa-color.jpg") left top no-repeat;
+      background-size: 180px 180px;
+      padding-left: 180px;
+    }
+
+    @media (min-width: 768px) {
+      & .img-rosaColor:hover {
+        background-size: 207px 207px;
+        padding-left: 207px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & .img-rosaColor:hover {
+        background-size: 278px 278px;
+        padding-left: 278px;
+      }
+    }
+
+    & .img-patriColor:hover {
+      background: url("../images/Pati-color.png") left top no-repeat;
+      background-size: 180px 180px;
+      padding-left: 180px;
+    }
+
+    @media (min-width: 768px) {
+      & .img-patriColor:hover {
+        background-size: 207px 207px;
+        padding-left: 207px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & .img-patriColor:hover {
+        background-size: 278px 278px;
+        padding-left: 278px;
+      }
+    }
+
+    & .img-macaColor:hover {
+      background: url("../images/Maca-color.png") left top no-repeat;
+      background-size: 180px 180px;
+      padding-left: 180px;
+    }
+
+    @media (min-width: 768px) {
+      & .img-macaColor:hover {
+        background-size: 207px 207px;
+        padding-left: 207px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & .img-macaColor:hover {
+        background-size: 278px 278px;
+        padding-left: 278px;
+      }
+    }
+
+    & .img-mariaColor:hover {
+      background: url("../images/Maria-color.png") left top no-repeat;
+      background-size: 180px 180px;
+      padding-left: 180px;
+    }
+
+    @media (min-width: 768px) {
+      & .img-mariaColor:hover {
+        background-size: 207px 207px;
+        padding-left: 207px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & .img-mariaColor:hover {
+        background-size: 278px 278px;
+        padding-left: 278px;
+      }
+    }
+*/

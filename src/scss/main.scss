@@ -5,26 +5,16 @@
 @import "core/common";
 
 //LAYOUT
-
 @import "layout/header";
 @import "layout/hero";
 @import "layout/team";
 @import "layout/adalabers";
 @import "layout/footer";
 
-//LAYOUT-DARKSIDE
-@import "layout/darkside/header";
-@import "layout/darkside/hero";
-@import "layout/darkside/team";
-@import "layout/darkside/adalabers";
-@import "layout/darkside/footer";
-
 //COMPONENTS
-
 @import "components/form";
 @import "components/hero";
 
 //PAGES
-
 @import "pages/contact.scss";
 @import "pages/darkside.scss";
