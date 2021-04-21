@@ -33,10 +33,14 @@
     align-items: center;
     font-family: $main-font-family;
 
-    .a {
+    .text-link {
       color: #ffffff;
       text-transform: uppercase;
       text-decoration: none;
+
+      &:hover {
+        color: #242424;
+      }
     }
   }
 }
