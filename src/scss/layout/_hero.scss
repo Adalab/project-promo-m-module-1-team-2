@@ -20,9 +20,9 @@
     }
 
     .elia {
+      animation: 4s movement2 ease-in-out infinite;
       background: url(../images/Memoji-Elia.png) no-repeat center;
       background-size: contain;
-      animation: 4s movement2 ease-in-out infinite;
 
       grid-column: span 2;
     }
@@ -34,9 +34,9 @@
     }
 
     .pati {
+      animation: 4s movement3 ease-in-out infinite;
       background: url(../images/Memoji-Pati.png) no-repeat center;
       background-size: contain;
-      animation: 4s movement3 ease-in-out infinite;
 
       grid-column: span 2;
     }
@@ -49,29 +49,34 @@
     }
 
     .maria {
+      animation: 4s movement2 ease-in-out infinite;
       background: url(../images/Memoji-Maria.png) no-repeat center;
       background-size: contain;
-      animation: 4s movement2 ease-in-out infinite;
 
       grid-column: 2/4;
     }
   }
   .box-claim {
-    background-color: white;
-    bottom: -35px;
+    background-color: $color-bluegreen;
     border: none;
-    left: 40px;
-    padding: 1.4rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
     position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin: 0 auto;
 
     &:hover {
-      box-shadow: 0px 0px 10px #ccc;
+      filter: invert(1);
       transition: 0.4s ease;
     }
 
     .claim {
-      font-size: 16px;
-      color: #141414;
+      color: white;
+      font-size: 14px;
       font-family: $main-font-family;
     }
   }
@@ -83,11 +88,7 @@
   }
 
   .box-claim {
-    background-color: rgba(255, 255, 255, 0.8);
-    left: 46px;
-    h2 {
-      font-size: 1.2rem;
-    }
+    margin-right: 100px;
   }
 }
 
@@ -107,7 +108,6 @@
     }
 
     .box-claim {
-      margin-left: 140px;
       h2 {
         font-size: 1.5rem;
       }
