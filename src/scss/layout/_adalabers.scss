@@ -23,113 +23,32 @@
     align-items: center;
     margin-bottom: 10px;
 
-    & img {
+    img {
       /*border: thick solid #ccc;
       border-radius: 10px;*/
       height: 180px;
       width: 180px;
+      cursor: pointer;
     }
-
-    & .img-elia:hover {
+    .img-elia:hover {
       background: url(../images/Memoji-Elia.png) left top no-repeat;
-      background-size: 180px 180px;
-      padding-left: 180px;
     }
-
-    @media (min-width: 768px) {
-      & .img-elia:hover {
-        background-size: 207px 207px;
-        padding-left: 207px;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      & .img-elia:hover {
-        background-size: 278px 278px;
-        padding-left: 278px;
-      }
-    }
-
-    & .img-rosa:hover {
+    .img-rosa:hover {
       background: url(../images/Memoji-Rosa.png) left top no-repeat;
-      background-size: 180px 180px;
-      padding-left: 180px;
     }
-
-    @media (min-width: 768px) {
-      & .img-rosa:hover {
-        background-size: 207px 207px;
-        padding-left: 207px;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      & .img-rosa:hover {
-        background-size: 278px 278px;
-        padding-left: 278px;
-      }
-    }
-
-    & .img-patri:hover {
+    .img-patri:hover {
       background: url(../images/Memoji-Pati.png) left top no-repeat;
-      background-size: 180px 180px;
-      padding-left: 180px;
     }
-
-    @media (min-width: 768px) {
-      & .img-patri:hover {
-        background-size: 207px 207px;
-        padding-left: 207px;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      & .img-patri:hover {
-        background-size: 278px 278px;
-        padding-left: 278px;
-      }
-    }
-
-    & .img-maca:hover {
+    .img-maca:hover {
       background: url(../images/Memoji-Maca.png) left top no-repeat;
-      background-size: 180px 180px;
-      padding-left: 180px;
     }
-
-    @media (min-width: 768px) {
-      & .img-maca:hover {
-        background-size: 207px 207px;
-        padding-left: 207px;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      & .img-maca:hover {
-        background-size: 278px 278px;
-        padding-left: 278px;
-      }
-    }
-
-    & .img-maria:hover {
+    .img-maria:hover {
       background: url(../images/Memoji-Maria.png) left top no-repeat;
+    }
+    .img-info:hover {
       background-size: 180px 180px;
       padding-left: 180px;
     }
-
-    @media (min-width: 768px) {
-      & .img-maria:hover {
-        background-size: 207px 207px;
-        padding-left: 207px;
-      }
-    }
-
-    @media (min-width: 1200px) {
-      & .img-maria:hover {
-        background-size: 278px 278px;
-        padding-left: 278px;
-      }
-    }
-
     .wrapper-person-info h3 {
       color: black;
       margin: 1rem 0;
@@ -137,7 +56,6 @@
     .wrapper-person-info p {
       color: grey;
     }
-
     .wrapper-rrss {
       display: flex;
       flex-flow: row wrap;
@@ -155,27 +73,6 @@
   }
 }
 
-.button {
-  text-decoration: none;
-  border: none;
-
-  min-width: 250px;
-  max-width: 300px;
-  height: 40px;
-
-  border-radius: 5px;
-  text-align: center;
-  margin: auto;
-
-  color: white;
-  background-color: rgb(9, 157, 141);
-  text-transform: uppercase;
-  a {
-    padding: 10px;
-    color: white;
-  }
-}
-
 @media (min-width: 768px) {
   .whoarewe {
     .person-info {
@@ -183,12 +80,15 @@
       flex-flow: row wrap;
       gap: 2rem;
       justify-content: center;
-
       padding-bottom: 20px;
 
       & img {
         width: 207px;
         height: 207px;
+      }
+      .img-info:hover {
+        background-size: 207px 207px;
+        padding-left: 207px;
       }
       .odd {
         order: 2;
@@ -207,9 +107,15 @@
 @media (min-width: 1200px) {
   .whoarewe {
     width: 70%;
-    .person-info img {
-      width: 278px;
-      height: 278px;
+    .person-info {
+      & img {
+        width: 278px;
+        height: 278px;
+      }
+      .img-info:hover {
+        background-size: 278px 278px;
+        padding-left: 278px;
+      }
     }
   }
 }
