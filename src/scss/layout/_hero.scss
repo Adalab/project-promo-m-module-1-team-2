@@ -61,23 +61,21 @@
     border: none;
     border-radius: 0.5rem;
     padding: 1rem;
+    width: 90%;
+    bottom: 30px;
 
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-
+    display: block;
+    position: relative;
+    cursor: pointer;
     margin: 0 auto;
+
+    color: white;
+    font-size: 14px;
+    text-align: center;
 
     &:hover {
       filter: invert(1);
       transition: 0.4s ease;
-    }
-
-    .claim {
-      color: white;
-      font-size: 14px;
-      font-family: $main-font-family;
     }
   }
 }
@@ -88,7 +86,8 @@
   }
 
   .box-claim {
-    margin-right: 100px;
+    left: -28%;
+    max-width: 350px;
   }
 }
 
@@ -108,9 +107,8 @@
     }
 
     .box-claim {
-      h2 {
-        font-size: 1.5rem;
-      }
+      font-size: 1.125rem;
+      left: -31%;
     }
   }
 }
