@@ -62,12 +62,13 @@
     border-radius: 0.5rem;
     padding: 0.5rem;
     width: 90%;
-    bottom: 22px;
 
     display: block;
     position: relative;
-    cursor: pointer;
+    bottom: 22.25px;
     margin: 0 auto;
+
+    cursor: pointer;
 
     color: white;
     font-size: 14px;
@@ -98,7 +99,7 @@
   }
 
   .box-claim {
-    left: -28%;
+    left: -20%;
     max-width: 350px;
   }
 }
@@ -120,7 +121,8 @@
 
     .box-claim {
       font-size: 1.125rem;
-      left: -31%;
+      left: -30%;
+      bottom: 26.5px;
     }
   }
 }
