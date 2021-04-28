@@ -33,17 +33,19 @@
     }
   }
 
-  .whoarewe {
-    .person-info {
-      filter: invert(1);
-      & .img-grey:hover {
+  .container-person-info {
+    filter: invert(1);
+    .img-grey {
+      border-radius: 20px;
+      &:hover {
         filter: grayscale(100);
       }
-      .wrapper-person-info {
-        filter: invert(1);
-      }
+    }
+    .person-info {
+      filter: invert(1);
     }
   }
+
   .footer__logoImg {
     filter: invert(1);
   }

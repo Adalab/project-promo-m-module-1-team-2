@@ -45,12 +45,9 @@ label {
   background-color: $color-bluegreen;
   text-transform: uppercase;
   cursor: pointer;
-}
-
-@media (min-width: 768px) {
-  .button {
+  @include tablet {
     width: 50%;
-    margin-right: 0;
+    margin-right: 0px;
   }
 }
 

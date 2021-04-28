@@ -4,6 +4,10 @@
   background-size: cover;
   height: 421px;
 
+  @include desktop {
+    height: 550px;
+  }
+
   .img-hero {
     max-width: 1000px;
     height: 100%;
@@ -15,8 +19,22 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 1fr;
 
+    @include tablet {
+      width: 750px;
+    }
+    @include desktop {
+      width: 100%;
+    }
+
     .memoji-hero {
       animation: 4s movement ease-in-out infinite;
+
+      @include desktop {
+        height: 270px;
+        width: 270px;
+
+        justify-self: center;
+      }
     }
 
     .elia {
@@ -74,6 +92,16 @@
     font-size: 14px;
     text-align: center;
 
+    @include tablet {
+      left: -20%;
+      max-width: 350px;
+    }
+    @include desktop {
+      font-size: 1.125rem;
+      left: -30%;
+      bottom: 26.5px;
+    }
+
     &:hover {
       filter: invert(1);
       transition: 0.4s ease;
@@ -82,6 +110,7 @@
     animation-duration: 0.5s;
     animation-direction: alternate-reverse;
     animation-iteration-count: infinite;
+
     @keyframes box-claim-scale {
       from {
         transform: scale(1);
@@ -89,40 +118,6 @@
       to {
         transform: scale(1.05);
       }
-    }
-  }
-}
-
-@media (min-width: 768px) {
-  .img-hero {
-    width: 750px;
-  }
-
-  .box-claim {
-    left: -20%;
-    max-width: 350px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .hero {
-    height: 550px;
-
-    .img-hero {
-      width: 100%;
-
-      .memoji-hero {
-        height: 270px;
-        width: 270px;
-
-        justify-self: center;
-      }
-    }
-
-    .box-claim {
-      font-size: 1.125rem;
-      left: -30%;
-      bottom: 26.5px;
     }
   }
 }

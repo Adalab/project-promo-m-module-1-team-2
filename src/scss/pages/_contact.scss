@@ -5,28 +5,22 @@
   margin: 30px auto;
   width: 90%;
   max-width: 440px;
-}
-
-.contact-title {
-  text-transform: uppercase;
-  color: #099d8d;
-  margin-bottom: 15px;
-}
-
-.text-contact {
-  padding: 15px 15px 30px 15px;
-}
-
-.small-contact {
-  font-size: 10px;
-}
-
-span {
-  color: rgb(20, 217, 196);
-}
-
-@media (min-width: 1200px) {
-  .contact {
+  @include desktop {
     max-width: 600px;
+  }
+  .contact-title {
+    text-transform: uppercase;
+    color: #099d8d;
+    margin-bottom: 15px;
+  }
+
+  .text-contact {
+    padding: 15px 15px 30px 15px;
+  }
+  .small-contact {
+    font-size: 10px;
+    span {
+      color: rgb(20, 217, 196);
+    }
   }
 }
